@@ -42,5 +42,6 @@
 	</build>
 	<modules>
 		<module>jdbc</module>
+		<module>bookmall</module>
 	</modules>
 </project>
