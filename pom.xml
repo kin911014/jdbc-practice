@@ -44,5 +44,6 @@
 		<module>jdbc</module>
 		<module>bookmall</module>
 		<module>bookshop</module>
+		<module>sql</module>
 	</modules>
 </project>
