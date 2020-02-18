@@ -11,10 +11,10 @@ public class ConnectionTest {
 		// 이름은 exerd의 포워드엔지니어링에 있다.  => com.mysql.jdbc.Driver
 		Connection connection = null;
 		try {
-		Class.forName("com.mysql.jdbc.Driver");
+		Class.forName("org.mariadb.jdbc.Driver");
 
 		// 2. 연결하기
-		String url = "jdbc:mysql://127.0.0.1:3306/webdb";
+		String url = "jdbc:mysql://192.168.1.105:3307/webdb";
 		// 왼쪽 webdb는 id, 오른쪽 webdb는 pw이다.
 		connection = DriverManager.getConnection(url, "webdb", "webdb");
 		

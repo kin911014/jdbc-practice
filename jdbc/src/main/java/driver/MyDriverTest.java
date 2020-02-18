@@ -9,10 +9,11 @@ public class MyDriverTest {
 	public static void main(String[] args) {
 		try {
 			// 1. JDBC Driver(MyDriver) 로딩
-			Class.forName("driver.MyDriver");
+			// exerd의 포워딩 마지막 단계의 org.~이 있다.
+			Class.forName("org.mariadb.jdbc.Driver");
 
 			// 2. 연결하기
-			String url = "jdbc:mydb://127.0.0.1:9999/webdb";
+			String url = "jdbc:mysql://192.168.1.105:3307/webdb";
 			Connection conn = DriverManager.getConnection(url, "webdb", "webdb");
 			System.out.println(conn);
 		} catch (ClassNotFoundException e) {
